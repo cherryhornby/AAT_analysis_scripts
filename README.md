@@ -13,8 +13,8 @@ These analyses include:
 
 ```text
 AAT_analysis_scripts/
-├── ELViM_substate_extraction/					ELViM projection and associated data from the top 95% weighted frames from each replica ensemble of AAT RNC
-│   ├── AAT_RNC_MD_elvim_data/
+├── ELViM_substate_extraction/					
+│   ├── AAT_RNC_MD_elvim_data/					ELViM projection and associated data from the top 95% weighted frames from each replica ensemble of AAT RNC
 │   └── extract_substates_from_elvim_contours.py
 ├── FEP_bootstrapping/
 │   ├── AAT_COPOST_MD_colvar/					Plumed files containing Q and weights for co-post AAT ensembles (1-3)
