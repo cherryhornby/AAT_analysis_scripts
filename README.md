@@ -11,33 +11,36 @@ These analyses include:
 
 ## Repository Structure
 
-AAT_analysis_scripts/
-|--- calpha_contact/
-|    |--- AAT_MD_cmaps/					Contact probility maps for each binned sub-ensemble based on Q-axis (qbin) for each replica (1-3)
-|    |    |--- copost/
-|    |    |--- iso/
-|    |    |--- rnc/
-|    |--- inter_pairwise_contact_prob_calc.py
-|    |--- pairwise_contact_prob_calc.py 
-|--- ELViM_substate_extraction/
-|    |--- AAT_RNC_MD_elvim_data/			ELViM projection and associated data from the top 95% weighted frames from each replica ensemble of AAT RNC 
-|    |--- extract_substates_from_elvim_contours.py
-|--- FEP_bootstrapping/
-|    |--- AAT_COPOST_MD_colvar/				Plumed files containing Q and weights for co-post AAT ensembles (1-3) 
-|    |--- AAT_ISO_MD_colvar/				Plumed files containing Q and weights for AAT RNC ensembles (1-3)
-|    |--- AAT_RNC_MD_colvar/				Plumed files containing Q and weights for isolated AAT ensembles (1-3)
-|    |--- calc_fep_bootstrap_rmsd.py
-|--- PEG_protection_factors/
-|    |--- AAT_ISO_MD_contact_numbers/			Average ensemble contact numbers for folded/unfolded isolated AAT ensembles calculated with different
-|    |    |--- native/					cutoffs and number of neighbouring residues excluded
-|    |    |--- random_coil/
-|    |--- AAT_RNC_MD_lnPFs/				Protection Factors for each frame for each PEGylation site for the AAT RNC ensembles (1-3)
-|    |--- calc_contact_number_4_PEG_PFs.py
-|--- sidechain_coordination_num/
-|    |--- AAT_I1_MD_coord_num/				Sidechain coordination numbers for each frame from all atom ensembles of AAT I1-state
-|    |--- AAT_I2_MD_coord_num/				Sidechain coordination numbers for each frame from all atom ensembles of AAT I2-state
-|    |--- AAT_N_MD_coord_num/				Sidechain coordination numbers for each frame from all atom ensembles of AAT native state
-|    |--- calc_sc_coord_num.py	
+```mermaid
+mindmap
+ AAT_analysis_scripts/
+ 	calpha_contact/
+ 		AAT_MD_cmaps/					Contact probility maps for each binned sub-ensemble based on Q-axis (qbin) for each replica (1-3)
+			copost/
+			iso/
+			rnc/
+		inter_pairwise_contact_prob_calc.py
+		pairwise_contact_prob_calc.py 
+	ELViM_substate_extraction/
+		AAT_RNC_MD_elvim_data/				ELViM projection and associated data from the top 95% weighted frames from each replica ensemble of AAT RNC 
+		extract_substates_from_elvim_contours.py
+	FEP_bootstrapping/
+		AAT_COPOST_MD_colvar/				Plumed files containing Q and weights for co-post AAT ensembles (1-3) 
+		AAT_ISO_MD_colvar/				Plumed files containing Q and weights for AAT RNC ensembles (1-3)
+		AAT_RNC_MD_colvar/				Plumed files containing Q and weights for isolated AAT ensembles (1-3)
+		calc_fep_bootstrap_rmsd.py
+	PEG_protection_factors/
+		AAT_ISO_MD_contact_numbers/			Average ensemble contact numbers for folded/unfolded isolated AAT ensembles calculated with different
+			native/					cutoffs and number of neighbouring residues excluded
+			random_coil/
+		AAT_RNC_MD_lnPFs/				Protection Factors for each frame for each PEGylation site for the AAT RNC ensembles (1-3)
+		calc_contact_number_4_PEG_PFs.py
+	sidechain_coordination_num/
+		AAT_I1_MD_coord_num/				Sidechain coordination numbers for each frame from all atom ensembles of AAT I1-state
+		AAT_I2_MD_coord_num/				Sidechain coordination numbers for each frame from all atom ensembles of AAT I2-state
+		AAT_N_MD_coord_num/				Sidechain coordination numbers for each frame from all atom ensembles of AAT native state
+		calc_sc_coord_num.py	
+```
 
 ## Scripts
 
